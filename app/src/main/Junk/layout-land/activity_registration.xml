@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basebackground"
+    tools:context=".LoginActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/relativeLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="172dp"
+            android:layout_height="152dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/newuser" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Hey There!"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/colorAccent"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/heading1"
+            android:layout_width="298dp"
+            android:layout_height="19dp"
+            android:layout_below="@id/heading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="You're just one step away from registering yourself! Let's do this!"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/colorAccent"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayout5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.476">
+
+        <EditText
+            android:id="@+id/regcred1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/regcred2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regcred1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/regbutton"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/regcred2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Submit"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/backtologintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:labelFor="@id/regbutton"
+            android:text="Already a user? Log in!"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

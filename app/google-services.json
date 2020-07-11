@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "332962652408",
+    "firebase_url": "https://gate-5340b.firebaseio.com",
+    "project_id": "gate-5340b",
+    "storage_bucket": "gate-5340b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332962652408:android:3f59346bc0d50ed9c6db0d",
+        "android_client_info": {
+          "package_name": "com.securegate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332962652408-h2rdukpckvjdr43rj58h80qk96oac0ba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJHS89BDWHG_IuTKBuL4_bIblQ-ew6NuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332962652408-h2rdukpckvjdr43rj58h80qk96oac0ba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

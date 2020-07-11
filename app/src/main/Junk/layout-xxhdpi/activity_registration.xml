@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basebackground"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="223dp"
+            android:layout_height="211dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/newuser" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey There!"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/colorAccent"
+            android:textSize="35dp"
+            android:layout_below="@id/imageView3"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/heading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You're just one step away from registering yourself! Let's do this!"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/colorAccent"
+            android:textSize="18dp"
+            android:layout_below="@id/heading"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/regcred1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Email"
+            android:textColorHint="@color/white"
+            android:layout_below="@id/heading1"
+            android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:id="@+id/regcred2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="xhdpi"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"
+            android:layout_below="@id/regcred1"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/regbutton"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:text="Submit"
+            android:textColor="@color/gray"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/regcred2"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/backtologintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Already a user? Log in!"
+            android:textColor="@color/white"
+            android:layout_below="@id/regbutton"
+            android:layout_marginTop="50dp"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

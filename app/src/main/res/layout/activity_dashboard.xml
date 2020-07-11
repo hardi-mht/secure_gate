@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity"
+    android:background="@drawable/bg_grad">
+
+    <RelativeLayout
+        android:id="@+id/userinfopanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp" >
+
+        <ImageView
+            android:id="@+id/dashboardsettings"
+            android:layout_width="32dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/settings" />
+
+        <ImageView
+            android:id="@+id/currentuserdp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/greetingtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, "
+            android:textColor="@color/white"
+            android:textSize="30dp"
+      android:layout_below="@id/currentuserdp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/houseinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flat 102, Raj Reeva Heights"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_below="@+id/greetingtext"
+            android:layout_centerHorizontal="true"
+  />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dashboardnavgationpanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userinfopanel">
+
+        <Button
+            android:id="@+id/activitynav"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:autoSizeMaxTextSize="12dp"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/selection"
+            android:text="Activity"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/householdnav"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:autoSizeMaxTextSize="12dp"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeTextType="uniform"
+            android:background="@android:color/transparent"
+            android:text="Household"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/communitynav"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+
+            android:autoSizeMaxTextSize="12dp"
+            android:autoSizeMinTextSize="5sp"
+            android:autoSizeTextType="uniform"
+            android:background="@android:color/transparent"
+            android:text="COMMUNItY"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/dashboardnavgationpanel"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/bg_panel">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            </FrameLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
